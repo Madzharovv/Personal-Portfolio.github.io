@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script> type="text/javascript"
+    google.charts.load('current', {
+        packages: ['corechart', 'bar']
+      });
+      google.charts.setOnLoadCallback(drawMaterial);
+      
+      function drawMaterial() {
+        var data = google.visualization.arrayToDataTable([
+          ['Language', 'Number of years of experience '],
+          ['HTML', 3 ],
+          ['CSS ', 3],
+          ['JavaScript', 2],
+          ['JAVA', 1,],
+          ['C++', 0.5, ]
+        ]);
+      
+        var materialOptions = {
+          chart: {
+            title: 'My experience with different languages'
+          },
+          hAxis: {
+            title: 'My experience',
+            minValue: 0,
+          },
+          vAxis: {
+            title: 'Language'
+          },
+          bars: 'horizontal'
+        };
+        var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+        materialChart.draw(data, materialOptions);
+      }
+    </script>
+<script>
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+</script>
+
+</head>
+
+<body>
+
+    <header> 
+                
+                     
+            <div id="nav-container" class= "nav-container">  
+                <h1 class="Logo">VM</h1>
+                <nav class= "navigation">
+                
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                
+            </div>
+
+         
+    </header>
+    <main>
+     
+        <div class="Description">
+            <div class="personalinformation">
+            <div class="Title">
+                <h2>Valentin Madzharov</h2>
+            </div>
+            <p>
+            I am a 19 years old Computer Science student at City University of London in my second 
+            year and on this Portfolio I will be listing my skills and attributes in web 
+            development as well as some of my projects.<br>
+            </p>
+            </div>
+            <div class ="personal-image">
+            <img src="./images/pic.jpg" width=300px height="400" alt="Web-Development image"></img>
+            </div>
+        </div>
+        
+        <div class="experience-container">
+            <h3 class="experience-title">My skills</h3>
+            
+            <div id="chart_div" class="chart_div"></div>
+
+            <p class="experience-description">I began developing websites in my first year of college as it was a part of my coursework and becuase I enjoyed it quite a bit, I continued working with CSS and HTML. As I was developing websites I started using javaScript here and there and currently I am taking a beginer to expert course on JavaScript as I want to master it and be able to develop breath-taking websites that have freindly UI's and are fun and efficient to use </p>
+        </div>
+
+
+        <div class="projects-container">
+            <h3 class="projetcs-title">My projects</h3>
+
+             <div class="content-wrapper">
+
+                <h4 class="Project-name">Project name: The Random Party Theme</h4>
+                
+                <p>
+                    This is my first project that i have developed in my time in University and this project was
+                    made during the first two weeks of bootcamp. This is a Processing project is very simple and
+                    shows my understanding in loops, randomness, and sound and here is what it does:
+                </p>
+                <p>
+                    The project is a background party program which gives a mood and theme to a party by playing
+                    a song in the background while shapes are changing their size and color randomly and
+                    additionaly there is a sphere spining which adds to the party theme. I achieved this by
+                    using for loops which allow all the rectangles and circles to be positioned correctly and
+                    additionally it allows them to change their size randomnly every second.
+                </p>
+                <p>
+                    Check out the code on Github: <a
+                        href="https://github.com/Madzharovv/adbt117">https://github.com/Madzharovv/adbt117</a>
+                </p>
+                <div class="sphere-image" >
+                <img  src="./images/screenshot1.JPG" width=300px alt="Web-Development image" style="-webkit-box-shadow: 10px 20px 67px 30px rgba(0,0,0,1);
+                -moz-box-shadow: 10px 20px 67px 30px rgba(0,0,0,1);
+                box-shadow: 10px 20px 67px 30px rgba(0,0,0,1);"></img>
+                </div>
+            </div>
+
+
+            <div class="content-wrapper">
+                        <h4>Project name: Galaxy Portals I </h4>
+                        <p>
+                            Galaxy Portals I is an Arcade game that was developed using Java. The main aim of the 
+                            game is to make it through the galxy alive and with as many energy balls collected.  
+                        </p>
+                        <p>
+                            When playing through the game you encounter different troubles like figuring out what the best
+                             route is to the next portal or figuring out how to avoid the enemies while making your way 
+                             across the levels. The game has saving and loading features and enjoyable and fitting background
+                             music that adds to the amazing experience that playing the game is.
+                        </p>
+                        <p>
+                            Check out the code on Github: <a
+                                href="https://github.com/Madzharovv/adbt117">https://github.com/Madzharovv/adbt117</a>
+                        </p>
+                
+                
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./images/StartLevel.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/level1.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/level2.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/level3.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/Level4.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/level5.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./images/Level6.JPG" width=300px alt="Web-Development image"></img>
+                              </div><div class="swiper-slide">
+                                <img src="./images/EndLevel.JPG" width=300px alt="Web-Development image"></img>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+              
+            </div>
+            <div class="content-wrapper">
+                <h4>Project name: cleaning company</h4>
+                <p>
+                    Galaxy Portals I is an Arcade game that was developed using Java. The main aim of the 
+                    game is to make it through the galxy alive and with as many energy balls collected.  
+                </p>
+                <p>
+                    When playing through the game you encounter different troubles like figuring out what the best
+                     route is to the next portal or figuring out how to avoid the enemies while making your way 
+                     across the levels. The game has saving and loading features and enjoyable and fitting background
+                     music that adds to the amazing experience that playing the game is.
+                </p>
+                <p>
+                    Check out the code on Github: <a
+                        href="https://github.com/Madzharovv/adbt117">https://github.com/Madzharovv/adbt117</a>
+                </p>
+        
+        
+                
+      
+    </div>
+        </div>
+        </div>
+        
+        <div class="hobbies-container">
+            <h3 class="hobbies-title">My Hobbies</h3>
+            <p>As for my hobiies I enjoy staying up to date with general technology, which icludes everything Apple realted, news on new 
+                devices and software and how they could change our day to day lives. I also enjoy folowing the National basketball association as I am a big fan of
+                basketball and Oklahoma City Thunder. My true sports passion is football however becuase I enjoy every aspect of it from 
+                the tactics and how impresive trasitions of formation depending on the sitations on the pitch to the individual one on one duels.</p>
+        </div>
+        <div class="height"></div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale:2,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="/styles/app.js"></script>
+</body>
+
+</html>
+
+

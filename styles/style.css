@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 1.5;
+    font-size: inherit;
+}
+
+body{
+
+background-color: black;
+
+}
+
+main{
+    padding-top: 7em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+
+
+.Logo {
+    padding: 0.25em;
+    font-family: 'Zen Dots', cursive;
+    color: rgb(0, 123, 255);
+    position: relative;
+    animation: logo 2s linear 2s infinite alternate;
+    align-items: center;
+}
+ 
+@keyframes logo {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 15px;
+        top: 0px;
+    }
+
+    50% {
+        left: 15px;
+        top: 15px;
+    }
+
+    75% {
+        left: 0px;
+        top: 15px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+
+}
+
+.nav-container:before,
+.nav-container:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: rgb(0, 123, 255);;
+    transition: width 1.2s linear;
+}
+
+
+.nav-container:before {
+    left: 0;
+    
+}
+
+.nav-container:after {
+    right: 0;
+}
+
+.nav-container.scrolled {
+    background: white;
+}
+
+
+.nav-container.scrolled:before,
+.nav-container.scrolled:after {
+    width: 50%;
+}
+
+.nav-container.scrolled .navigation a {
+    color: rgb(0, 123, 255);
+}
+
+
+
+.navigation ul li:hover a {
+    color: rgb(255, 0, 0);
+}
+
+
+
+.nav-container.scrolled .navigation ul li:hover a {
+    color: rgb(0, 0, 0);
+}
+.nav-container .navigation ul li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+ .nav-container .Company-name-nav {
+    color: rgb(0, 123, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation ul {
+
+    display: flex;
+}
+
+
+.navigation ul li {
+
+    list-style: none outside;
+    padding: 0.6em 1.2em;
+
+}
+
+
+.navigation a {
+    color: rgb(0, 123, 255);
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+}
+
+.nav-container.scrolled .navigation a {
+    color:(255, 0, 0);
+}
+
+
+
+.navigation ul li:hover a {
+    color: rgb(0, 123, 255);
+}
+
+.nav-container.scrolled .navigation ul li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+
+.Title {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+.Description{
+    margin-bottom: 5em;
+    display: flex;
+
+}
+@keyframes fadeinleft{
+
+    0%   { left:-700px; top:0px;}
+    100%  { left:0px; top:0px;}
+    
+  }
+
+  
+  @keyframes fadeinright {
+    0%   { left:700px; top:0px;}
+    100%  { left:0px; top:0px;}
+    
+  }
+.personal-image{
+    animation-name: fadeinright;
+    
+    animation-duration: 2s;
+    position: relative;
+
+}
+.personalinformation{
+    animation-name: fadeinleft;
+    
+    animation-duration: 2s;
+    position: relative;
+}
+
+.chart_div{
+    padding-top: 3em;
+}
+
+.sphere-image{
+  text-align: center;
+}
+.content-wrapper{
+display: flex;
+flex-direction: column;
+margin-bottom: 5em;
+}
+
+.images-content-warpper{
+
+    display: grid;
+    grid-column: 2,2fr;
+  padding: 2em;
+    
+}
+.navigation{ 
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.experience-description{
+    padding-top: 2em;
+}
+.Description img{
+    border-radius: 100%;
+    border: black 2px;
+    margin-left: 5em;
+}
+
+.video{
+    margin: 2em;
+}
+
+
+
+.swiper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    height: fit-content;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+.height{height: 54vh;}
