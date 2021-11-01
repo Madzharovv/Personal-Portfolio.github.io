@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script>
     type = "text/javascript"
@@ -45,6 +47,25 @@
       materialChart.draw(data, materialOptions);
     }
   </script>
+
+
+
+    <script>
+      var swiperflip = new Swiperflip(".mySwiperflip", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiperflip-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
   <script>
     google.charts.load('current', {
       packages: ['corechart']
@@ -206,7 +227,78 @@
           This website is for a cleaning business and when the webiste is connected to a database
           cleaning enquiries can be made.
         </p>
-    
+        <p>
+          This is what the website looked like:
+        </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/1.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/2.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/3.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/4.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/5.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/6.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/7.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/8.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/9.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/10.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/11.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/12.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/13.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/14.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/15.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/16.png" width=300px alt="Web-Development image"></img>
+            </div> <div class="swiper-slide">
+              <img src="./images/17.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/18.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/19.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/20.png" width=300px alt="Web-Development image"></img>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/21.png" width=300px alt="Web-Development image"></img>
+            </div>
+  
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
         <p>
           Check out the code on Github: <a
             href="https://github.com/Madzharovv/adbt117">https://github.com/Madzharovv/adbt117</a>
