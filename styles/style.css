@@ -246,7 +246,12 @@ margin-bottom: 5em;
 }
 
 
-
+footer{
+   margin-top:6em;
+   margin-bottom: 6em;
+    align-items: center;
+    text-align: center;
+}
 .swiper {
     width: 500px;
     height: 500px;
@@ -264,3 +269,43 @@ margin-bottom: 5em;
     display: block;
     width: 100%;
   }
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+
+.fa {
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+.fa-twitter {
+    background: rgb(0, 123, 255);
+    color: white;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+
+.fa-google {
+    background: rgb(0, 123, 255);
+    color: white;
+    border-radius: 0.5em;
+    
+    text-align: center;
+}
+.icons-title {
+    margin-bottom: 0.5rem;
+    color: rgb(0, 0, 0);
+    padding-bottom: 1em;
+}
