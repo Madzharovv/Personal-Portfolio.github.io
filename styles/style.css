@@ -191,6 +191,7 @@ main{
     100%  { left:0px; top:0px;}
     
   }
+  /*
 .personal-image{
     animation-name: fadeinright;
     
@@ -198,6 +199,7 @@ main{
     position: relative;
 
 }
+*/
 .personalinformation{
     animation-name: fadeinleft;
     
@@ -308,4 +310,61 @@ footer{
     margin-bottom: 0.5rem;
     color: rgb(0, 0, 0);
     padding-bottom: 1em;
+}
+
+@media  (max-width:480px) {
+    *{
+    max-width: 400px;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .personalinformation{
+        text-align: center;
+    }
+    .experience-container{
+        max-width: 400px;
+    }
+    .experience-description {
+        text-align: center;
+    }
+    .projects-container{
+        text-align: center;
+    } .hobbies-desc{
+        text-align: center;
+    }
+    .hobbies-title{
+        text-align: center;
+    }
+    .swiper{
+        max-width: 400px;
+        width: 270px;
+        height: 270px;
+        position: relative;
+        height: fit-content;
+        margin-bottom: 5em;
+    }
+    .projects-hyperlink a{
+        text-align: center;
+        max-width: 200px;
+    }
+    .projects-hyperlink {
+        text-align: center;
+        max-width: 200px;
+        font-size:12px;
+    }
+   .sphere-image img{
+       max-width: 200px;
+   }
+   .chart_div{
+   visibility: hidden;
+   display: inline;
+   }
+    
+
 }
